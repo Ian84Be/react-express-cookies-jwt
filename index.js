@@ -71,7 +71,7 @@ function generateToken(user) {
     expiresIn: jwtExpires * 60 * 1000
 	};
 	
-	const secret = jwtSecret || 'yaya'
+  const secret = jwtSecret;
 
   return jwt.sign(payload, secret, options);
 }
